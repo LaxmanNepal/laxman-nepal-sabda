@@ -165,7 +165,7 @@ button:hover {
 .nepali-date {
   font-family: 'kantipur';
   font-size: 2.5rem;
-  color: rgb(255, 255, 255);
+  color: black;
   letter-spacing: 0rem;
   cursor: default;
   box-shadow: 0 4px 4px rgba(255, 0, 191, 0.377);
