@@ -181,7 +181,7 @@ button:hover {
 .greeting {
   font-family: 'Rhodium Libre';
   font-size: 2.5rem;
-  color: rgb(255, 196, 0);
+  color: black;
   justify-content: center;
   letter-spacing: 0rem;
   cursor: default;
