@@ -8,7 +8,7 @@ body, html {
 }
 
 .background-image {
-  background-image: url('image/quotes.png');
+  background-image: url('image/quote.png');
   background-size: cover;
   background-position: center;
   height: 100%;
