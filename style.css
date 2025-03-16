@@ -1,0 +1,463 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Noto Sans Devanagari', 'kantipur', sans-serif;
+}
+
+.background-image {
+  background-image: url('image/quotes.png');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container {
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.quote-content {
+  padding: 40px;
+  border-radius: 8px;
+  background-image: url('image/quotes.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 3px 2px 5px rgba(0, 255, 149, 0.336);
+}
+
+.quote-text {
+  font-size: 24px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.quote-author {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.quote-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.prev-quote {
+  background-color: #007bff;
+}
+
+.next-quote {
+  background-color: #28a745;
+}
+
+.stop-quote {
+  background-color: #dc3545;
+}
+
+.copy-quote {
+  background-color: #17a2b8;
+}
+
+.download-quote {
+  background-color: #cd07ff;
+}
+
+.fullscreen-quote {
+  background-color: #00ccff;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  color: aliceblue;
+}
+
+.fa-youtube {
+  color: aliceblue;
+}
+
+.fa-instagram {
+  color: aliceblue;
+}
+
+.fa-github {
+  color: aliceblue;
+}
+
+#clock span {
+  margin: 0 -0.2rem; /* Space between numbers and colons */
+}
+
+#nhour, #min, #sec {
+  color: rgb(255, 217, 0);
+  font-size: 5rem;
+  font-family: 'kantipur', serif;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+
+.nmin, .nsec {
+  color: rgb(255, 0, 0);
+  font-size: 5rem;
+  font-family: 'kantipur', serif;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+
+#nampm {
+  color: rgb(233, 230, 230);
+  font-size: 2rem;
+  font-family: 'Kantipur', serif; 
+  letter-spacing: 0rem;
+  text-align: center;
+  margin-left: 0.5rem; 
+  margin-right: 0.5rem; 
+  border: 1px solid #ff00aa27; 
+  padding: 0.5rem; 
+  border-radius: 1px; 
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.247);
+}
+
+@font-face {
+  font-family: 'Rhodium Libre';
+  src: url('fonts/Preeti.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nepali-date {
+  font-family: 'kantipur';
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0rem;
+  cursor: default;
+  box-shadow: 0 4px 4px rgba(255, 0, 191, 0.377);
+  width: 300px; 
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.greeting {
+  font-family: 'Rhodium Libre';
+  font-size: 2.5rem;
+  color: rgb(255, 196, 0);
+  justify-content: center;
+  letter-spacing: 0rem;
+  cursor: default;
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px grey;
+  z-index: 2;
+}
+
+.appname {
+  font-size: 1.5rem;
+}
+
+/* Footer Styles */
+.footer {
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px #12c90c;
+  color: #fbff00;
+  clear: both;
+  margin-top: 5%;
+}
+
+.footer img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .quote-content {
+    padding: 30px;
+  }
+  
+  .quote-text {
+    font-size: 22px;
+  }
+  
+  .quote-author {
+    font-size: 16px;
+  }
+  
+  button {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+  
+  .fa {
+    font-size: 28px;
+    width: 40px;
+    padding: 15px;
+  }
+  
+  #nhour, #min, #sec {
+    font-size: 4rem;
+    letter-spacing: 0.8rem;
+  }
+  
+  .nmin, .nsec {
+    font-size: 4rem;
+    letter-spacing: 0.8rem;
+  }
+  
+  #nampm {
+    font-size: 1.8rem;
+  }
+  
+  .nepali-date {
+    font-size: 2rem;
+    width: 250px;
+    height: 45px;
+  }
+  
+  .greeting {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-content {
+    padding: 20px;
+  }
+  
+  .quote-text {
+    font-size: 20px;
+  }
+  
+  .quote-author {
+    font-size: 14px;
+  }
+  
+  button {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+  
+  .fa {
+    font-size: 24px;
+    width: 35px;
+    padding: 10px;
+  }
+  
+  #nhour, #min, #sec {
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+  }
+  
+  .nmin, .nsec {
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+  }
+  
+  #nampm {
+    font-size: 1.5rem;
+  }
+  
+  .nepali-date {
+    font-size: 1.5rem;
+    width: 200px;
+    height: 40px;
+  }
+  
+  .greeting {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-content {
+    padding: 10px;
+  }
+  
+  .quote-text {
+    font-size: 18px;
+  }
+  
+  .quote-author {
+    font-size: 12px;
+  }
+  
+  button {
+    font-size: 10px;
+    padding: 4px 12px;
+  }
+  
+  .fa {
+    font-size: 20px;
+    width: 30px;
+    padding: 5px;
+  }
+  
+  #nhour, #min, #sec {
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+  }
+  
+  .nmin, .nsec {
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+  }
+  
+  #nampm {
+    font-size: 1.2rem;
+  }
+  
+  .nepali-date {
+    font-size: 1rem;
+    width: 150px;
+    height: 35px;
+  }
+  
+  .greeting {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .quote-content {
+    padding: 8px;
+  }
+  
+  .quote-text {
+    font-size: 16px;
+  }
+  
+  .quote-author {
+    font-size: 10px;
+  }
+  
+  button {
+    font-size: 9px;
+    padding: 3px 10px;
+  }
+  
+  .fa {
+    font-size: 18px;
+    width: 25px;
+    padding: 4px;
+  }
+  
+  #nhour, #min, #sec {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+  }
+  
+  .nmin, .nsec {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+  }
+  
+  #nampm {
+    font-size: 1rem;
+  }
+  
+  .nepali-date {
+    font-size: 0.9rem;
+    width: 140px;
+    height: 30px;
+  }
+  
+  .greeting {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .quote-content {
+    padding: 6px;
+  }
+  
+  .quote-text {
+    font-size: 14px;
+  }
+  
+  .quote-author {
+    font-size: 8px;
+  }
+  
+  button {
+    font-size: 8px;
+    padding: 2px 8px;
+  }
+  
+  .fa {
+    font-size: 16px;
+    width: 20px;
+    padding: 3px;
+  }
+  
+  #nhour, #min, #sec {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .nmin, .nsec {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  #nampm {
+    font-size: 0.8rem;
+  }
+  
+  .nepali-date {
+    font-size: 0.8rem;
+    width: 120px;
+    height: 25px;
+  }
+  
+  .greeting {
+    font-size: 0.8rem;
+  }
+}

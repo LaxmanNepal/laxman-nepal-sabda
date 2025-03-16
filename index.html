@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्रेमिल शब्द संसार </title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kantipur:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kantipur:wght@400;700&display=swap"rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kantipur:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+<link rel="icon" href="image/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-image" href="icon/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="image/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="image/favicon-48x48.png" sizes="48x48" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="logo" id="logo">
+    <img src="image/logo.png" width="32" class="align-self-center">
+
+    <label class="appname">
+        <span class="appname">-प्रेमिल शब्द संसार </span>
+    </label>
+
+</div>
+    <div class="background-image">
+        <div class="quote-container">
+            <div class="clock-container">
+                <div id="clock" class="clock"></div>
+                <div id="nepali-date" class="nepali-date"></div>
+                <p id="greeting" class="greeting"></p>
+            </div>
+            
+            
+          <div class="quote-content">
+            
+            <div class="quote-container">
+                <p class="quote-text"></p>
+                <p class="quote-author"></p>
+            </div>
+            
+        </div>
+        <div class="quote-buttons">
+            <button class="prev-quote">Previous</button>
+            <button class="next-quote">Next</button>
+            <button class="stop-quote">Stop</button>
+            <button class="copy-quote">Copy</button>
+            <button class="download-quote">Download PNG</button>
+            <button class="fullscreen-quote">Fullscreen</button>
+        </div>
+        <a href="https://www.facebook.com/prchapagain/" class="fa fa-facebook"></a>
+        <a href="https://www.youtube.com/@PENmusicbypk" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/prchapagain_/" class="fa fa-instagram"></a>
+        <a href="https://github.com/prchapagain" class="fa fa-github"></a>
+        <div class="footer">
+            Made with ♥ by PR chapagain <a class="button" href="https://github.com/prchapagain"><img src="https://res.cloudinary.com/djcw5veb6/image/upload/v1719727590/about-xxl_ybbg2a.png" alt="footer img"></a>
+        </div>
+    </div>
+    
+    
+    
+    <script src="script.js"></script>
+    <script src="jquery.min"></script>
+    <script src="nepali.js"></script>
+    <script type="text/javascript" src="moment.min.js"></script>
+<script src="moment-with-locales.min.js"></script>
+<script src="moment-timezone-with-data.js"></script>
+<link rel="manifest" href="/manifest.json">
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(() => console.log('Service Worker Registered'))
+            .catch((error) => console.error('Service Worker Registration Failed:', error));
+    }
+</script>
+
+</body>
+</html>
