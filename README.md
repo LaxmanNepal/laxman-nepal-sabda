@@ -1,6 +1,4 @@
-# PR Sabda Sansar
-
-PR Sabda Sansar is a dynamic web app that focuses on providing accurate Nepali date and time conversions along with daily quotes. This project aims to promote the Nepali language and culture through an engaging and user-friendly digital platform.
+# a dynamic web app that focuses on providing accurate Nepali date and time conversions along with daily quotes. This project aims to promote the Nepali language and culture through an engaging and user-friendly digital platform.
 
 ## Features
 
