@@ -1,76 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ne">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Laxman Nepal Sabda </title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Kantipur:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kantipur:wght@400;700&display=swap"rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kantipur:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="image/favicon.ico" type="image/x-icon">
-<link rel="icon" href="image/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-image" href="icon/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="image/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="icon" href="image/favicon-48x48.png" sizes="48x48" type="image/png">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050505">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="लक्ष्मण नेपाल शब्द — नेपाली प्रेरणादायी भनाइ, विचार र उद्धरणहरू। मनपर्ने शब्द सुरक्षित गर्नुहोस् र डबल क्लिक गरेर सजिलै कपी गर्नुहोस्।">
+  <meta property="og:title" content="Laxman Nepal Sabda — नेपाली उद्धरणहरू">
+  <meta property="og:description" content="नेपाली प्रेरणादायी शब्दहरू पढ्नुहोस्, कपी गर्नुहोस् र मनपर्नेमा सुरक्षित गर्नुहोस्।">
+  <meta property="og:image" content="image/quotes.png">
+  <title>लक्ष्मण नेपाल शब्द | नेपाली उद्धरणहरू</title>
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="image/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=Rhodium+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="logo" id="logo">
-    <img src="image/logo.png" width="32" class="align-self-center">
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <img src="image/logo.png" alt="लक्ष्मण नेपाल शब्द" width="42" height="42">
+        <div><strong>लक्ष्मण नेपाल शब्द</strong><span>शब्दमा विचार · विचारमा शक्ति</span></div>
+      </div>
+      <button class="icon-button" id="favorites-toggle" type="button" aria-label="मनपर्ने उद्धरणहरू" title="मनपर्ने उद्धरणहरू"><span>♥</span><b id="favorite-count">0</b></button>
+    </header>
 
-    <label class="appname">
-        <span class="appname">-Laxman Nepal Sabda  </span>
-    </label>
-
-</div>
-    <div class="background-image">
-        <div class="quote-container">
-            <div class="clock-container">
-                <div id="clock" class="clock"></div>
-                <div id="nepali-date" class="nepali-date"></div>
-                <p id="greeting" class="greeting"></p>
-            </div>
-            
-            
-          <div class="quote-content">
-            
-            <div class="quote-container">
-                <p class="quote-text"></p>
-                <p class="quote-author"></p>
-            </div>
-            
-        </div>
-        <div class="quote-buttons">
-            <button class="prev-quote">Previous</button>
-            <button class="next-quote">Next</button>
-            <button class="stop-quote">Stop</button>
-            <button class="copy-quote">Copy</button>
-            <button class="download-quote">Download PNG</button>
-            <button class="fullscreen-quote">Fullscreen</button>
-        </div>
- 
-    </div>
-    
-    
-    
-    <script src="script.js"></script>
-    <script src="jquery.min"></script>
-    <script src="nepali.js"></script>
-    <script type="text/javascript" src="moment.min.js"></script>
-<script src="moment-with-locales.min.js"></script>
-<script src="moment-timezone-with-data.js"></script>
-<link rel="manifest" href="/manifest.json">
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js')
-            .then(() => console.log('Service Worker Registered'))
-            .catch((error) => console.error('Service Worker Registration Failed:', error));
-    }
-</script>
-
+    <section class="hero-glass">
+      <div class="date-area">
+        <div id="clock" class="clock" aria-label="समय"></div>
+        <div id="nepali-date" class="nepali-date"></div>
+        <p id="greeting" class="greeting"></p>
+      </div>
+      <div class="section-heading"><span>आजको शब्द</span><small>डबल क्लिक = कपी · ♥ = मनपर्ने</small></div>
+      <div class="quote-scroller" id="quote-scroller" aria-label="नेपाली उद्धरणहरूको सूची"></div>
+      <div class="controls">
+        <button class="control secondary" id="prev-quote" type="button" aria-label="अघिल्लो">‹</button>
+        <button class="control secondary" id="next-quote" type="button" aria-label="अर्को">›</button>
+        <button class="control primary" id="copy-quote" type="button">कपी</button>
+        <button class="control secondary" id="download-quote" type="button">PNG</button>
+        <button class="control secondary" id="fullscreen-quote" type="button">⛶</button>
+      </div>
+    </section>
+    <div class="hint">माथि/तल स्क्रोल गर्नुहोस् · उद्धरणमा डबल क्लिक गर्दा कपी हुन्छ</div>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="nepali.js"></script>
+  <script src="moment.min.js"></script>
+  <script src="moment-with-locales.min.js"></script>
+  <script src="moment-timezone-with-data.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch(() => {});</script>
 </body>
 </html>
