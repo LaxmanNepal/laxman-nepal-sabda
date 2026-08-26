@@ -8,8 +8,9 @@
   "display":"standalone",
   "orientation":"portrait-primary",
   "background_color":"#eef2f7",
-  "theme_color":"#f5f7fb",
+  "theme_color":"#eef2f7",
   "description":"नेपाली प्रेरणादायी शब्द, विचार र उद्धरणहरू।",
+  "prefer_related_applications":false,
   "icons":[
     {"src":"image/logo.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
     {"src":"image/logo.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
